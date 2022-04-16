@@ -1,0 +1,48 @@
+{
+  "@context" : {
+    "MediumToMedium" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToMedium"
+    },
+    "HighVoltage" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighVoltage"
+    },
+    "PowerLine" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#PowerLine"
+    },
+    "isTransformerOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#isTransformerOf",
+      "@type" : "@id"
+    },
+    "MediumToHigh" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToHigh"
+    },
+    "LowToMedium" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowToMedium"
+    },
+    "HighToHigh" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighToHigh"
+    },
+    "MediumVoltage" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumVoltage"
+    },
+    "hasTransformer" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#hasTransformer",
+      "@type" : "@id"
+    },
+    "LowToLow" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowToLow"
+    },
+    "LowVoltage" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowVoltage"
+    },
+    "HighToMedium" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighToMedium"
+    },
+    "ElectricTransformer" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#ElectricTransformer"
+    },
+    "MediumToLow" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToLow"
+    }
+  }
+}
