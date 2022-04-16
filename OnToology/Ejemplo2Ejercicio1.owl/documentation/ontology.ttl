@@ -1,0 +1,200 @@
+@prefix : <http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#> .
+
+<http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#hasTransformer
+:hasTransformer rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isTransformerOf ;
+                rdf:type owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#isTransformerOf
+:isTransformerOf rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#ElectricTransformer
+:ElectricTransformer rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighToHigh
+:HighToHigh rdf:type owl:Class ;
+            rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighToMedium
+:HighToMedium rdf:type owl:Class ;
+              rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#HighVoltage
+:HighVoltage rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :PowerLine
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasTransformer ;
+                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( :HighToHigh
+                                                                                            :HighToMedium
+                                                                                          )
+                                                                            ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTransformer ;
+                                   owl:someValuesFrom :HighToHigh
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTransformer ;
+                                   owl:someValuesFrom :HighToMedium
+                                 ] .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowToLow
+:LowToLow rdf:type owl:Class ;
+          rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowToMedium
+:LowToMedium rdf:type owl:Class ;
+             rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#LowVoltage
+:LowVoltage rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :PowerLine
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasTransformer ;
+                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( :LowToLow
+                                                                                           :LowToMedium
+                                                                                         )
+                                                                           ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTransformer ;
+                                  owl:someValuesFrom :LowToLow
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTransformer ;
+                                  owl:someValuesFrom :LowToMedium
+                                ] .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToHigh
+:MediumToHigh rdf:type owl:Class ;
+              rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToLow
+:MediumToLow rdf:type owl:Class ;
+             rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumToMedium
+:MediumToMedium rdf:type owl:Class ;
+                rdfs:subClassOf :ElectricTransformer .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#MediumVoltage
+:MediumVoltage rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :PowerLine
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :hasTransformer ;
+                                                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( :MediumToHigh
+                                                                                              :MediumToLow
+                                                                                            )
+                                                                              ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTransformer ;
+                                     owl:someValuesFrom :MediumToHigh
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTransformer ;
+                                     owl:someValuesFrom :MediumToLow
+                                   ] .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#PowerLine
+:PowerLine rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#L1
+:L1 rdf:type owl:NamedIndividual ;
+    :hasTransformer :T1 ,
+                    :T3 .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#T1
+:T1 rdf:type owl:NamedIndividual ,
+             :ElectricTransformer ,
+             :HighToHigh .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#T2
+:T2 rdf:type owl:NamedIndividual ,
+             :ElectricTransformer ,
+             :MediumToHigh .
+
+
+###  http://www.semanticweb.org/jmdoc/ontologies/2022/3/untitled-ontology-47#T3
+:T3 rdf:type owl:NamedIndividual ,
+             :ElectricTransformer ,
+             :HighToMedium .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighToHigh
+                :HighToMedium
+                :LowToLow
+                :LowToMedium
+                :MediumToHigh
+                :MediumToLow
+                :MediumToMedium
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighVoltage
+                :LowVoltage
+                :MediumVoltage
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
