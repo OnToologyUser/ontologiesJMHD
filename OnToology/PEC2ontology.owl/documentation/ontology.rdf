@@ -1,0 +1,2020 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#"
+     xml:base="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tvseries2022="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022">
+        <rdfs:comment>Ontology name: TV series 2022
+Author: José Miguel Hernández Docal</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAPlace -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isPlaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place"/>
+        <rdfs:comment>The story occurs in a place</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasATime -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasATime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isTimeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
+        <rdfs:comment>The story occurs within a time that may be realistic or totaly fictional</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasActorActress -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasActorActress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isActorActressOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <rdfs:comment>Every series episodes have actors or actresses who participate in it</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasArgument -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasArgument">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isArgumentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"/>
+        <rdfs:comment>A serie has an argument</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAuthor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isAuthorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"/>
+        <rdfs:comment>An serie has authors</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCharacter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCharacterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <rdfs:comment>Character which belongs to the story that is told by the fictional work</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCountryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country"/>
+        <rdfs:comment>The country where the serie has been produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasDirector -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isDirectorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <rdfs:comment>Each serie episode must be directed only by one individual</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:comment>A serie such a literary work has fictional ingredients that compound the context of the story</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasInterpreter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasInterpreter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInterpreterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <rdfs:comment>A character must be interpeted by an actor or actress</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isLanguageOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language"/>
+        <rdfs:comment>Language that has been incorporated to the serie as original language, subtitles or dubbing</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
+        <rdfs:comment>A serie or movie has a nationality characteristics</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:comment>An episode needs of participant to be made</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasProducer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasProducer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isProducerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+        <rdfs:comment>A serie has producers</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasScreenwriter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasScreenwriter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isScreenwriterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <rdfs:comment>Every episode has an screenwriter</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isActorActressOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isActorActressOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>An individual who is an actor or actress of series</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isArgumentOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isArgumentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>An argument belongs to a serie or movie</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isAuthorOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isAuthorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>The individual is the author of series</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCharacterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCharacterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>A character that belongs to a fictional work</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCountryOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCountryOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>A country where series have been produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isDirectorOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isDirectorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:comment>An individual can be the director of several episodes from different series</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>A fictional object which is a part of a serie</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInterpreterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInterpreterOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <rdfs:comment>An actor or actress interprets characters in a movie or theatre work</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isLanguageOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isLanguageOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>A language that is a part of a serie or movie</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>Nationtality characteristics that belongs to a serie or movie</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>An individual that do a role in a serie</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isPlaceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isPlaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>The place where the things happen</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isProducerOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isProducerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>An individual who produces series</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isScreenwriterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isScreenwriterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:comment>An individual who is screenwriter of serie&apos;s episodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isTimeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isTimeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:comment>Is a fictional or realistic time when the action of a serie takes place</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasChapterNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasChapterNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>It&apos;s a number which identifiy an epsode within a season of a serie</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasEpisodeTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasEpisodeTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSeasonName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSeasonName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Usually a number which indetify a season of a serie</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSerieTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSerieTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>The name of a serie or a literary work</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Action -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Stories that are a quick sucession of events with the intention of thrilling audience</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInterpreterOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>An actress or actor participant in any episode of the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Animation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Animated cartoons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:comment>Literary argument of a serie or movie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:comment>Person who has writen the script</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasInterpreter"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>A fictional participant in the serie&apos;s plot. May be a person, an animal or thing, whatever. It&apos;s recognized by the serie it belongs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Comedy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Comic story. Light and humorous drama.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language"/>
+        <rdfs:comment>Any country in the world. This class can related to the place where the action happens, the place where the movie has produced, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:comment>Person who lead the serie recording</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Documentary -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Documentary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>A program presenting the facts about a person or event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Drama -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Drama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Turbulent and highly emotional stories</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasDirector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasScreenwriter"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasChapterNumber"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasEpisodeTitle"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Every chapter of the serie within a season</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Fantasy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Fiction stories with a large amount of imagination in them</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:comment>HBO streaming platform</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
+        <rdfs:comment>Any world language. In this ontology this class can be used to indicates original language, translated versions or idiom of the subtitles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:comment>Netflix platform</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Any kind of person who contributes to the serie in any way</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:comment>Place where the action occurs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#PrimeVideo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#PrimeVideo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:comment>Amazon Prime Video</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:comment>Promoter and investor of the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Fictional stories which try to use science as a basic argument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:comment>Person who adapts the original author idea into a serie format story</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSeasonName"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>A serie can be splited into different groups of episodes released out at different times.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasATime"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasArgument"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAuthor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCharacter"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCountry"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasProducer"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSerieTitle"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>This is the cinema artwork documented by the ontology</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ValuePartition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Action"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Animation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Comedy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Documentary"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Drama"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Fantasy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Terror"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Thriller"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:comment>Type of cinema whose a movie belongs to</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Component that belongs to the context and fictiona environment of a serie or movie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Nationality characteristics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService">
+        <rdfs:comment>Streaming platform where the serie is being, has been or will be shown</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Terror -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Terror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Stories which try to induce fear or aversion in the audience</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Thriller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:comment>Suspense drama</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:comment>When the action ocurrs. It must be considered in a general way. Can be an historical epoque, a far future, or an imaginary time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ValuePartition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ValuePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Disney+ -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Disney+">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:comment>Disney plus hub</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Alexandra_Cavill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Alexandra_Cavill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Rowan_Blanchard"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Alison_Wright -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Alison_Wright">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Andre_Layton -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Andre_Layton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Daveed_Diggs"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Annalise_Basso -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Annalise_Basso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Aubrey_Nealon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Aubrey_Nealon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode6"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode9"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode10"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Benjamin_Legrand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Benjamin_Legrand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"/>
+        <isAuthorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Bennett_Knox -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Bennett_Knox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Iddo_Goldberg"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Bess_Francis_Till -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Bess_Francis_Till">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mickey_Sumner"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Chinaka_Hodge -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Chinaka_Hodge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Christoph_Schrewe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Christoph_Schrewe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode1"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Clare_Kilner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Clare_Kilner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode10"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Daveed_Diggs -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Daveed_Diggs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#David_Frazee -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#David_Frazee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode3"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Donald_Joh -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Donald_Joh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode2"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode7"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Dooho_Choi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Dooho_Choi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+        <isProducerOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Everardo_Gout -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Everardo_Gout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Frederick_E.O._Toye -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Frederick_E.O._Toye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode4"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Graeme_Manson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Graeme_Manson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode1"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode10"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode1"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Helen_Shaver -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Helen_Shaver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode6"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Hiram_Martinez -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Hiram_Martinez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Iddo_Goldberg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Iddo_Goldberg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#James_Hawes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#James_Hawes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode1"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode10"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jaylin_Fletche -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jaylin_Fletche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jennifer_Connelly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jennifer_Connelly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jinju_Seong -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jinju_Seong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Susan_Park"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Josie_Wellstead -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Josie_Wellstead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Katie_McGuinness"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Katie_McGuinness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Katie_McGuinness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Kelly_Masterson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Kelly_Masterson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"/>
+        <isAuthorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Kiersten_Van_Horne -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Kiersten_Van_Horne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode4"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lena_Hall -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lena_Hall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Leslie_Hope -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Leslie_Hope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode5"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lizzie_Mickery -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lizzie_Mickery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Marty_Adelstein -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Marty_Adelstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+        <isProducerOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Melanie_Cavill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Melanie_Cavill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jennifer_Connelly"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mickey_Sumner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mickey_Sumner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Miles -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Miles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Jaylin_Fletche"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Miss_Audrey -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Miss_Audrey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lena_Hall"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Park_Chan-wook -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Park_Chan-wook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"/>
+        <isProducerOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Pike -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Pike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Steven_Ogg"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Rebecca_Rodriguez -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Rebecca_Rodriguez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode7"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Renée_St._Cyr -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Renée_St._Cyr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Roberto_Urbina -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Roberto_Urbina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Rowan_Blanchard -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Rowan_Blanchard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Ruth_Wardell -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Ruth_Wardell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Alison_Wright"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">First, The Weather Changed</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">994 Cars Long</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Prepare to Brace</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Access Is Power</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Without Their Maker</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Justice Never Boarded</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trouble Comes Sideways</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Universe is Indifferent</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">These Are His Revolutions</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Old Ways, Old Wars</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Time of Two Engines</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Into the White</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Smolder to Life</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Great Odyssey</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Single Trade</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Keep Hope Alive</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Many Miles From Snowpiercer</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Our Answer for Everything</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Eternal Engineer</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
+        <hasChapterNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasChapterNumber>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Show Must Go On</hasSerieTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Miller -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Miller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode2"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Otto -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Otto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Roche -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Roche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mike_O&apos;Malley"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sean_Bean -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sean_Bean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sheila_Vand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sheila_Vand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerCountry"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerGenre"/>
+        <hasStreamingService rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerStrService"/>
+        <hasSerieTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Snowpiercer</hasSerieTitle>
+        <rdfs:comment>Very famous serie based on a long movie with the same title.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerArgument -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerArgument">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"/>
+        <isArgumentOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+        <rdfs:comment>Argument from Snowpiercer serie</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerCountry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerCountry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country"/>
+        <rdfs:comment>Country where Snowpiercer serie is from</rdfs:comment>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://eulersharp.sourceforge.net/2003/03swap/countries#us</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerGenre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerGenre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction"/>
+        <rdfs:comment>Genre where Snowpiercer has to be included</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerSeason1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerSeason1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season"/>
+        <hasSeasonName rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSeasonName>
+        <rdfs:comment>First season of Snowpiercer</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerSeason2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerSeason2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season"/>
+        <hasSeasonName rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSeasonName>
+        <rdfs:comment>Second season of Snowpiercer</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerStrService -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SnowpiercerStrService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX"/>
+        <rdfs:comment>Streeaming service for Snowpiercer serie</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sr._Wilford -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sr._Wilford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sean_Bean"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Steven_Ogg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Steven_Ogg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Susan_Park -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Susan_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Tiffany_Ezuma -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Tiffany_Ezuma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#TimeOfSnowpiercer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#TimeOfSnowpiercer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
+        <isTimeOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+        <rdfs:comment>Tme when de Snowpiercer action happens</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Tina_de_la_Torre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Tina_de_la_Torre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode6"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS1Episode8"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Zak_Schwartz -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Zak_Schwartz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
+        <isScreenwriterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SPS2Episode3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Zarah_Ferami -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Zarah_Ferami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sheila_Vand"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Javier_«Javi»_De_La_Torre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Javier_«Javi»_De_La_Torre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Roberto_Urbina"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#John_«Oz»_Osweiller -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#John_«Oz»_Osweiller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Sam_Otto"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lilah_«LJ»_Folger_Jr -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Lilah_«LJ»_Folger_Jr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+        <hasInterpreter rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Annalise_Basso"/>
+        <isCharacterOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mike_O&apos;Malley -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Mike_O&apos;Malley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"/>
+        <isActorActressOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Snowpiercer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Comedy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Documentary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Drama"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Fantasy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Terror"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Thriller"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

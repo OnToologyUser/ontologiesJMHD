@@ -1,0 +1,264 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Disney+"
+    },
+    "HBO" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO"
+    },
+    "isInterpreterOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInterpreterOf",
+      "@type" : "@id"
+    },
+    "ScienceFiction" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ScienceFiction"
+    },
+    "hasInterpreter" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasInterpreter",
+      "@type" : "@id"
+    },
+    "hasATime" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasATime",
+      "@type" : "@id"
+    },
+    "isStreamingServiceOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf",
+      "@type" : "@id"
+    },
+    "PrimeVideo" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#PrimeVideo"
+    },
+    "Fantasy" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Fantasy"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Country"
+    },
+    "isScreenwriterOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isScreenwriterOf",
+      "@type" : "@id"
+    },
+    "hasScreenwriter" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasScreenwriter",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Comedy" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Comedy"
+    },
+    "isProducerOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isProducerOf",
+      "@type" : "@id"
+    },
+    "SerieNationality" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"
+    },
+    "hasArgument" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasArgument",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Director"
+    },
+    "hasActorActress" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasActorActress",
+      "@type" : "@id"
+    },
+    "hasEpisodeTitle" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasEpisodeTitle",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasSeasonName" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSeasonName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"
+    },
+    "isActorActressOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isActorActressOf",
+      "@type" : "@id"
+    },
+    "isParticipantOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf",
+      "@type" : "@id"
+    },
+    "isArgumentOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isArgumentOf",
+      "@type" : "@id"
+    },
+    "SerieGenre" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"
+    },
+    "ActorActress" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ActorActress"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"
+    },
+    "hasAPlace" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAPlace",
+      "@type" : "@id"
+    },
+    "isPlaceOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isPlaceOf",
+      "@type" : "@id"
+    },
+    "Documentary" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Documentary"
+    },
+    "Participant" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"
+    },
+    "hasProducer" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasProducer",
+      "@type" : "@id"
+    },
+    "hasNationality" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality",
+      "@type" : "@id"
+    },
+    "hasFictionalIngridients" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients",
+      "@type" : "@id"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Producer"
+    },
+    "isDirectorOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isDirectorOf",
+      "@type" : "@id"
+    },
+    "ValuePartition" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ValuePartition"
+    },
+    "NETFLIX" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX"
+    },
+    "StreamingService" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"
+    },
+    "hasAuthor" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasAuthor",
+      "@type" : "@id"
+    },
+    "isCharacterOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCharacterOf",
+      "@type" : "@id"
+    },
+    "Thriller" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Thriller"
+    },
+    "hasChapterNumber" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasChapterNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isGenreOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf",
+      "@type" : "@id"
+    },
+    "Argument" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Argument"
+    },
+    "Screenwriter" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"
+    },
+    "hasSerieTitle" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasSerieTitle",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Place" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place"
+    },
+    "Terror" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Terror"
+    },
+    "hasParticipant" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant",
+      "@type" : "@id"
+    },
+    "Drama" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Drama"
+    },
+    "hasGenre" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre",
+      "@type" : "@id"
+    },
+    "isCountryOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isCountryOf",
+      "@type" : "@id"
+    },
+    "SerieIngredient" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"
+    },
+    "Author" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Author"
+    },
+    "isInrgidientOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf",
+      "@type" : "@id"
+    },
+    "hasDirector" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasDirector",
+      "@type" : "@id"
+    },
+    "Language" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Language"
+    },
+    "isAuthorOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isAuthorOf",
+      "@type" : "@id"
+    },
+    "hasLanguage" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasLanguage",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isNationalityOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf",
+      "@type" : "@id"
+    },
+    "isTimeOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isTimeOf",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Action"
+    },
+    "hasCountry" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCountry",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Season"
+    },
+    "Animation" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Animation"
+    },
+    "Time" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"
+    },
+    "hasStreamingService" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService",
+      "@type" : "@id"
+    },
+    "Serie" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"
+    },
+    "isLanguageOf" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isLanguageOf",
+      "@type" : "@id"
+    },
+    "hasCharacter" : {
+      "@id" : "http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasCharacter",
+      "@type" : "@id"
+    }
+  }
+}
