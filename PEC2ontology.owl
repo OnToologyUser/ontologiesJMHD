@@ -159,6 +159,8 @@ Author: José Miguel Hernández Docal</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasFictionalIngridients">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
         <rdfs:comment>A serie such a literary work has fictional ingredients that compound the context of the story</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -167,6 +169,7 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
@@ -204,6 +207,9 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasNationality">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
         <rdfs:comment>A serie or movie has a nationality characteristics</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -213,6 +219,8 @@ Author: José Miguel Hernández Docal</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasParticipant">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
         <rdfs:comment>An episode needs of participant to be made</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -249,6 +257,7 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#hasStreamingService">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
@@ -334,9 +343,20 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isGenreOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieGenre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isInrgidientOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieIngredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
         <rdfs:comment>A fictional object which is a part of a serie</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -370,6 +390,8 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isNationalityOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#SerieNationality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
         <rdfs:comment>Nationtality characteristics that belongs to a serie or movie</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -378,6 +400,8 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isParticipantOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Participant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
         <rdfs:comment>An individual that do a role in a serie</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -418,6 +442,15 @@ Author: José Miguel Hernández Docal</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Screenwriter"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Episode"/>
         <rdfs:comment>An individual who is screenwriter of serie&apos;s episodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#isStreamingServiceOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Serie"/>
     </owl:ObjectProperty>
     
 
@@ -661,9 +694,9 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO_MAX -->
+    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO_MAX">
+    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
         <rdfs:comment>HBO streaming platform</rdfs:comment>
     </owl:Class>
@@ -684,15 +717,6 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
         <rdfs:comment>Netflix platform</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Other -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Other">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService"/>
-        <rdfs:comment>Any other streaming platform</rdfs:comment>
     </owl:Class>
     
 
@@ -873,22 +897,6 @@ Author: José Miguel Hernández Docal</rdfs:comment>
     <!-- http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#StreamingService">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#ValuePartition"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO_MAX"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Other"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#PrimeVideo"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Disney+"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment>Streaming platform where the serie is being, has been or will be shown</rdfs:comment>
     </owl:Class>
     
@@ -1835,16 +1843,6 @@ Author: José Miguel Hernández Docal</rdfs:comment>
             <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Character"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Place"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Time"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#HBO_MAX"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#NETFLIX"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Other"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#PrimeVideo"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jmdoc/ontologies/2022/3/tvseries2022#Disney+"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
